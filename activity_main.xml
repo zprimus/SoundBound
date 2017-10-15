@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="com.zacprimus.hackgt.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="198dp"
+        android:layout_height="96dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginStart="43dp"
+        android:background="#000000"
+        android:switchMinWidth="100dp"
+        android:switchPadding="0dp"
+        android:textColor="#2fe5e8"
+        android:textOff="@string/off_text"
+        android:textOn="@string/on_text"
+        android:thumbTint="#2fe5e8"
+        android:trackTint="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="RECORD"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintRight_toRightOf="@+id/switch1"
+        app:layout_constraintTop_toTopOf="@+id/switch1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="289dp"
+        android:orientation="vertical"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/switch1"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp">
+
+        <WebView
+            android:id="@+id/musicImage"
+            android:layout_width="383dp"
+            android:layout_height="322dp"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="55dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="381dp"
+            android:layout_height="322dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:color/transparent"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
